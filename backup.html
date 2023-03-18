@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+</head>
+
+<body>
+    <script>
+
+
+        const qaList = [
+            {
+                question: "Qual é a capital do Brasil?",
+                answer: "A capital do Brasil é Brasília."
+            },
+            {
+                question: "Quem inventou o telefone?",
+                answer: "O telefone foi inventado por Alexander Graham Bell."
+            },
+            {
+                question: "Quantos estados existem no Brasil?",
+                answer: "Atualmente, a União Europeia é composta por 27 países."
+            }
+        ];
+
+        const fuse = new Fuse(qaList, {
+            keys: ['question']
+        });
+
+        function getAnswer(question) {
+            const result = fuse.search(question);
+
+            if (result.length > 0) {
+                return result[0].item.answer;
+            } else {
+                return "Desculpe, não entendi a sua pergunta.";
+            }
+        }
+
+        // Teste do chatbot
+        const question = "Qual é a capital do brasil?";
+        const answer = getAnswer(question);
+        console.log(answer); // A capital do Brasil é Brasília.
+
+
+    </script>
+</body>
+
+</html>
