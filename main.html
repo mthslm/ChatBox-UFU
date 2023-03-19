@@ -167,11 +167,11 @@
         function botResponse(question) {
 
             const msgText = getAnswer(question);
-            const delay = msgText.split(" ").length * 100;
+            const delay = 100;
 
-            
+            setTimeout(() => {
                 appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
-            
+            }, delay);
         }
 
         // Utils
