@@ -16,7 +16,7 @@
     <section class="msger">
         <header class="msger-header">
             <div class="msger-header-title">
-                <i class="fas fa-comment-alt"></i> ChatBot para dúvidas frequentes
+                <i class="fas fa-comment-alt"></i> ChatBot para dúvidas frequentes sobre estágio | Universidade Federal de Uberlândia
             </div>
             <div class="msger-header-options">
                 <span><i class="fas fa-cog"></i></span>
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="msg-text">
-                        Olá! Vou tentar te ajudar num primeiro momento, ok? Basta escrever sua dúvida! 😄
+                        Olá! Vou tentar te ajudar num primeiro momento, ok? Basta escrever sua dúvida sobre estágio! 😄
                     </div>
                 </div>
             </div>
@@ -54,81 +54,50 @@
     <script>
         const qaList = [
             {
-                question: "Quais são os programas que compõem a Política de Assistência Estudantil da UFU?",
-                answer: `A Política de Assistência Estudantil da UFU é composta pelos seguintes programas: 
-      I – Programa de Integração dos Estudantes Ingressantes;
-      II – Programa de Alimentação;
-      III – Programa de Moradia;
-      IV – Programa de Transporte;
-      V – Programa de Saúde Física;
-      VI – Programa de Saúde Mental;
-      VII – Programa de Esportes, Recreação e Lazer;
-      VIII – Programa de Incentivo à Formação Cultural;
-      IX – Programa de Assistência e Apoio aos Estudantes de Baixa Condição Socioeconômica;
-      X – Programa de Incentivo à Formação da Cidadania;
-      XI – Programa de Aquisição de Materiais Didáticos e Livros;
-      XII – Programa de Bolsas Acadêmicas.`
+                question: "Qual a diferença de Estágio Supervisionado Obrigatório e não Obrigatório?",
+                answer: "O Estágio Supervisionado Obrigatório é uma disciplina obrigatória do curso de Engenharia Eletrônica e de Telecomunicações, enquanto o Estágio Supervisionado não Obrigatório é uma forma de fixar o aprendizado da sala de aula e laboratórios, aprender outros conteúdos e aprofundar conhecimentos em uma certa área do conhecimento, e facilitar a entrada no mercado de trabalho. O Estágio Supervisionado não Obrigatório serve também como horas complementares."
             },
             {
-                question: "O que é o Programa de Integração dos Estudantes Ingressantes?",
-                answer: "O Programa de Integração dos Estudantes Ingressantes tem como objetivo criar condições para que o estudante se integre ao contexto universitário, preparando-o para o bom desempenho acadêmico e formação integral."
+                question: "Quais os requisitos para o Estágio Supervisionado Obrigatório?",
+                answer: "Para o novo currículo do curso de Engenharia Eletrônica e de Telecomunicações, é necessário ter integralizado 2400 horas e fazer matrícula em Estágio Obrigatório, e para o currículo anterior, é necessário ter integralizado 2000 horas."
             },
             {
-                question: "O que é o Programa de Alimentação?",
-                answer: "O Programa de Alimentação tem como objetivo oferecer condições para o atendimento das necessidades de alimentação básica dos discentes do Ensino Superior da UFU, por meio dos Restaurantes Universitários (RUs), de modo a contribuir para sua permanência e conclusão de curso nesta Instituição."
+                question: "Quais os requisitos para o Estágio Supervisionado não obrigatório?",
+                answer: "É necessário estar a partir do terceiro período."
             },
             {
-                question: "O que é o Programa de Moradia?",
-                answer: "O Programa de Moradia tem como objetivo oferecer condições adequadas de moradia aos estudantes de baixa condição socioeconômica da UFU, de forma a permitir o desenvolvimento de suas atividades acadêmicas e o pleno exercício de sua cidadania."
+                question: "Qual a quantidade mínima de horas para o concluir o estágio?",
+                answer: "Para o currículo novo, são necessárias 300 horas e para o currículo anterior, são necessárias 210 horas."
             },
             {
-                question: "O que é o Programa de Transporte?",
-                answer: "O Programa de Transporte tem como objetivo oferecer condições de transporte adequadas para o acesso dos estudantes de baixa condição socioeconômica às atividades acadêmicas dos diversos cursos de graduação da UFU, contribuindo para a melhoria do desempenho acadêmico com qualidade de vida."
+                question: "Qual o documento necessário para formalizar o estágio?",
+                answer: "O Termo de compromisso de Estágio (TCE) devidamente preenchido e assinado pelo responsável pela empresa, pelo supervisor, pelo orientador e pelo estagiário. Deve ser enviado por e-mail para o coordenador de estágio, que por sua vez assinará e enviará ao setor de estágio para assinatura."
             },
             {
-                question: "O que é o Programa de Saúde Física?",
-                answer: "O Programa de Saúde Física tem como objetivo implantar medidas efetivas para viabilizar a manutenção e/ou recuperação da saúde dos estudantes."
+                question: "Quais assinaturas são aceitas?",
+                answer: "Assinaturas manuais e digitais são aceitas, sendo recomendado o uso da assinatura pelo Portal Gov.BR. Para acessar os serviços do Portal Gov.BR é necessário um cadastro no Portal. https://www.gov.br/pt-br/servicos/assinatura-eletronica"
             },
             {
-                question: "O que é o Programa de Saúde Mental?",
-                answer: "O Programa de Saúde Mental tem como objetivo promover ações em saúde mental à comunidade discente da UFU, nos âmbitos preventivo, educativo e terapêutico."
+                question: "Quantas horas de estágio posso fazer?",
+                answer: "É possível fazer 20 horas semanais (4 horas diárias) ou 30 horas semanais (6 horas diárias). Em casos excepcionais, é permitido fazer 40 horas semanais (8 horas diárias)."
             },
             {
-                question: "O que é o Programa de Esportes, Recreação e Lazer?",
-                answer: "O Programa de Esportes, Recreação e Lazer tem como objetivo instituir ações de educação esportiva, recreativa e de lazer, capazes de contribuir com o processo de formação integral, melhoria da qualidade de vida e a ampliação da integração social, da comunidade universitária."
+                question: "Posso fazer estágio de 40 horas?",
+                answer: "Se você não tiver disciplinas presenciais e apresentar um atestado de compatibilidade de horários, sim."
             },
             {
-                question: "Qual é o objetivo do Programa de Integração dos Estudantes Ingressantes?",
-                answer: "O objetivo é criar condições para que o estudante se integre ao contexto universitário, preparando-o para o bom desempenho acadêmico e formação integral."
+                question: "Posso pedir dispensa das horas de estágio por estar trabalhando na área do curso?",
+                answer: "Sim, é possível pedir dispensa das horas de estágio, mediante apresentação de comprovantes de trabalho na área, plano de atividades com orientador e supervisor, datas previstas para início e fim do período, produção de relatório e apresentação em banca de estágio. O pedido deve ser feito ao colegiado."
             },
             {
-                question: "Como funciona o Programa de Alimentação da UFU?",
-                answer: "O Programa de Alimentação oferece condições para o atendimento das necessidades de alimentação básica dos discentes do Ensino Superior da UFU, por meio dos Restaurantes Universitários (RUs), de modo a contribuir para sua permanência e conclusão de curso nesta Instituição."
+                question: "Como escolho meu orientador?",
+                answer: "Para escolher seu Orientador de Estágio Supervisionado, é necessário que ele seja um professor efetivo da Universidade Federal de Uberlândia, preferencialmente da Faculdade de Engenharia Elétrica e com formação na área do estágio. Ter um orientador com conhecimento na área pode contribuir para um melhor desempenho no estágio."
             },
             {
-                question: "O que é o Programa de Moradia da UFU?",
-                answer: "O Programa de Moradia oferece condições adequadas de moradia aos estudantes de baixa condição socioeconômica da UFU, de forma a permitir o desenvolvimento de suas atividades acadêmicas e o pleno exercício de sua cidadania."
-            },
-            {
-                question: "Quem pode utilizar o Programa de Transporte da UFU?",
-                answer: "O Programa de Transporte oferece condições de transporte adequadas para o acesso dos estudantes de baixa condição socioeconômica às atividades acadêmicas dos diversos cursos de graduação da UFU, contribuindo para a melhoria do desempenho acadêmico com qualidade de vida."
-            },
-            {
-                question: "O que é o Programa de Saúde Física da UFU?",
-                answer: "O Programa de Saúde Física tem como objetivo implantar medidas efetivas para viabilizar a manutenção e ou recuperação da saúde dos estudantes."
-            },
-            {
-                question: "Quais são as ações do Programa de Saúde Mental da UFU?",
-                answer: "O Programa de Saúde Mental da UFU promove ações em saúde mental à comunidade discente nos âmbitos preventivo, educativo e terapêutico."
-            },
-            {
-                question: "O que é o Programa de Esportes, Recreação e Lazer da UFU?",
-                answer: "O Programa de Esportes, Recreação e Lazer institui ações de educação esportiva, recreativa e de lazer, capazes de contribuir com o processo de formação integral, melhoria da qualidade de vida e a ampliação da integração social, da comunidade universitária."
-            },
-            {
-                question: "Qual é o objetivo do Programa de Incentivo à Formação Cultural da UFU?",
-                answer: "O objetivo do Programa de Incentivo à Formação Cultural é garantir aos estudantes o pleno exercício dos direitos culturais em consonância com a Política de Culturas da UFU."
-            }]
+                question: "O supervisor deve ser engenheiro eletricista ou ter alguma forma específica?",
+                answer: "Não, o supervisor do estágio não precisa ser um engenheiro eletricista. Ele deve ser um profissional com experiência extensa na área do estágio."
+            }
+        ];
 
 
         const fuse = new Fuse(qaList, {
