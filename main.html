@@ -107,7 +107,13 @@
         function getAnswer(question) {
             const result = fuse.search(question);
 
-            if (result.length > 0) {
+            
+            if(result.length == 1) {
+                return `Perguntas com similaridade que podem te ajudar: <br><br>
+                <strong> ${result[0].item.question} </strong><br>
+                ${result[0].item.answer}`
+            } else
+            if (result.length > 1) {
                 return `Perguntas com similaridade que podem te ajudar: <br><br>
                 <strong> ${result[0].item.question} </strong><br>
                 ${result[0].item.answer} <br><br>
