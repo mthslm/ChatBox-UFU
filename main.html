@@ -109,9 +109,9 @@
 
             if (result.length > 0) {
                 return `Perguntas com similaridade que podem te ajudar: <br><br>
-                ${result[0].item.question} <br>
+                <strong> ${result[0].item.question} </strong><br>
                 ${result[0].item.answer} <br><br>
-                ${result[1].item.question} <br>
+                <strong> ${result[1].item.question} </strong><br>
                 ${result[1].item.answer} <br>`
             } else {
                 return "Desculpe, não entendi a sua pergunta. Tente escreve-la de outra forma ou entre em contato com a secretaria do curso.";
