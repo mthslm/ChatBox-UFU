@@ -108,15 +108,11 @@
             const result = fuse.search(question);
 
             if (result.length > 0) {
-                return result[0].item.answer;
+                return question + "<br>" + result[0].item.answer;
             } else {
                 return "Desculpe, não entendi a sua pergunta. Tente escreve-la de outra forma ou entre em contato com a secretaria do curso.";
             }
         }
-
-
-
-
 
         //parte do chat
         const msgerForm = get(".msger-inputarea");
